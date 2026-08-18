@@ -1,0 +1,162 @@
+.hero {
+    position: relative;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 8%;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background-image: url("../../assets/images/logo/logo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1400px;
+
+    opacity: 0.07;
+
+    z-index: 0;
+}
+
+.overlay {
+    position: relative;
+    z-index: 1;
+
+    max-width: 850px;
+    text-align: center;
+}
+
+.badge {
+    display: inline-block;
+
+    background: #d4af37;
+    color: black;
+
+    padding: 10px 20px;
+
+    border-radius: 50px;
+
+    font-weight: bold;
+
+    margin-bottom: 30px;
+}
+
+.overlay h1 {
+    color: white;
+
+    font-size: 72px;
+
+    line-height: 1.1;
+
+    margin-bottom: 20px;
+
+    text-transform: uppercase;
+}
+
+.overlay h2 {
+    color: #d4af37;
+
+    font-size: 32px;
+
+    margin-bottom: 25px;
+}
+
+.overlay p {
+    color: #cfcfcf;
+
+    font-size: 20px;
+
+    line-height: 1.8;
+
+    max-width: 700px;
+
+    margin: 0 auto 45px;
+}
+
+.buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    margin-bottom: 50px;
+
+    flex-wrap: wrap;
+}
+
+.primaryButton,
+.secondaryButton {
+    text-decoration: none;
+
+    padding: 16px 32px;
+
+    border-radius: 50px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.primaryButton {
+    background: #d4af37;
+    color: black;
+}
+
+.secondaryButton {
+    border: 2px solid #d4af37;
+    color: white;
+}
+
+.primaryButton:hover,
+.secondaryButton:hover {
+    transform: translateY(-5px);
+}
+
+.stats {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 60px;
+
+    flex-wrap: wrap;
+}
+
+.stats div {
+    text-align: center;
+}
+
+.stats h3 {
+    color: #d4af37;
+
+    font-size: 38px;
+
+    margin-bottom: 5px;
+}
+
+.stats span {
+    color: #cfcfcf;
+}
+
+@media (max-width: 768px) {
+    .overlay h1 {
+        font-size: 48px;
+    }
+
+    .overlay h2 {
+        font-size: 24px;
+    }
+
+    .overlay p {
+        font-size: 18px;
+    }
+}

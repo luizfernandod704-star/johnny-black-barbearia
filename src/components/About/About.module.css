@@ -1,0 +1,27 @@
+.about{
+    padding:120px 10%;
+    background:#111;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.text span{
+    color:#d4af37;
+    font-weight:bold;
+}
+
+.text h2{
+    color:white;
+    font-size:42px;
+    margin:18px 0 30px;
+}
+
+.text p{
+    color:#d0d0d0;
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:18px;
+}
