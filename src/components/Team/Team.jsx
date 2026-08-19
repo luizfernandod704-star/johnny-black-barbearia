@@ -1,9 +1,9 @@
 import styles from "./Team.module.css";
 import { useState } from "react";
 
-import johnny from "../../assets/images/equipe/johnny.jpg";
-import rogerio from "../../assets/images/equipe/rogerio.jpg";
-import luiz from "../../assets/images/equipe/luiz.jpg";
+import johnny from "../../assets/images/equipe/Johnny.jpg";
+import rogerio from "../../assets/images/equipe/Rogerio.jpg";
+import luiz from "../../assets/images/equipe/Luiz.jpg";
 
 function Team() {
   const [membroSelecionado, setMembroSelecionado] = useState(null);
