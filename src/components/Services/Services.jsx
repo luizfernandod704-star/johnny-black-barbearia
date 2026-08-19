@@ -7,7 +7,7 @@ import Luzes from "../../assets/images/servicos/luzes.jpg";
 import Platinado from "../../assets/images/servicos/platinado.jpg";
 import Pigmentacao from "../../assets/images/servicos/pigmentacao.jpg";
 import Penteado from "../../assets/images/servicos/penteado.jpg";
-import sobrancelha from "../../assets/images/Servicos/sobrancelha.jpg";
+import sobrancelha from "../../assets/images/servicos/Sobrancelha.jpg";
 
 function Services() {
   const [selectedImage, setSelectedImage] = useState(null);
