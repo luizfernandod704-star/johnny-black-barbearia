@@ -1,14 +1,11 @@
 import styles from "./Hero.module.css";
-import logoWhite from "../../assets/images/logo/logo-white.png";
-import fachada from "../../assets/images/barbearia/fachada.jpg";
 
 function Hero() {
   return (
     <section id="inicio" className={styles.hero}>
       <div className={styles.overlay}>
-        <span className={styles.badge}>💈 DESDE 2014</span>
 
-        <h1> BARBEARIA JOHNNY BLACK</h1>
+        <h1>BARBEARIA JOHNNY BLACK</h1>
 
         <h2>Mais que um corte, uma experiência.</h2>
 
@@ -18,19 +15,25 @@ function Hero() {
           o seu visual e a sua autoestima.
         </p>
 
-         <div className={styles.buttons}>
-         <a
-         href="https://wa.me/5511977991052"
-         target="_blank"
-         rel="noreferrer"
-        className={styles.primaryButton}
-        >
-        WhatsApp
-        </a>
+        {/* DESDE 2014 - AGORA ACIMA DOS BOTÕES */}
+        <span className={styles.badge}>💈 DESDE 2014</span>
 
-        <a href="#mapa" className={styles.secondaryButton}>
-        Como Chegar
-        </a>
+        <div className={styles.buttons}>
+          <a
+            href="https://wa.me/5511977991052"
+            target="_blank"
+            rel="noreferrer"
+            className={styles.primaryButton}
+          >
+            WhatsApp
+          </a>
+
+          <a
+            href="#mapa"
+            className={styles.secondaryButton}
+          >
+            Como Chegar
+          </a>
         </div>
 
         <div className={styles.stats}>
@@ -49,6 +52,7 @@ function Hero() {
             <span>Clientes Satisfeitos</span>
           </div>
         </div>
+
       </div>
     </section>
   );
